@@ -12,6 +12,7 @@
     "start": "nodemon app.js"
   },
   "dependencies": {
+    "fs": "0.0.1",
     "mongo-oplog-watcher": "0.0.1",
     "mongodb": "^1.4.5",
     "monk": "^0.9.0",
