@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.0.4.js"></script>
+    <script type="text/javascript">
+      //var io = require('socket.io');
+      var socket = io.connect('http://localhost:1337');
+      function stupid() {
+      socket.on('connect', function(){
+        socket.on('count', function(count){
+          console.log(count);
+          $("#counter").text(count);
+        });
+      });
+      setTimeout(function(){
+        window.location.reload(1);
+      }, 5000);
+      }
+      stupid();
+    </script>
+  </head>
+  <body>
+    <h1 id="counter">0</h1>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "description": "",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Will Ricketts",
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "mongo-oplog-watcher": "0.0.1",
+    "mongodb": "^1.4.5",
+    "monk": "^0.9.0",
+    "nodemon": "^1.2.0",
+    "socket.io": "^1.0.4"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "repository": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+}
